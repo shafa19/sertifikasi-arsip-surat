@@ -104,6 +104,6 @@ class ArsipSuratController extends Controller
     public function delete($id_arsipsurat)
     {
         $arsipsurat = ArsipSurat::find($id_arsipsurat)->delete();
-        return redirect('arsipsurat')->with('success','Data berhasil dihapus');
+        return redirect('/')->with('success','Data berhasil dihapus');
     }
 }
